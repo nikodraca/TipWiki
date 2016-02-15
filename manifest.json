@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "WikiPreview",
+    "description": "Hover over links to get information",
+    "version": "1.3",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
