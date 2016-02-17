@@ -1,17 +1,19 @@
 var elements = document.links;
 
-function info(json) {
+function info(jsonx) {
     var rv = null;
 
-    $.getJSON(json ,function(data) {
+    $.getJSON(jsonx ,function(data) {
         $.each(data.query.pages, function(x, item)
             {
-                // item.title;
-                rv = "test";
+                rv = item.extract;
+                console.log(rv);
+                return false;
             });
 
     });
 
+    console.log(rv);
     return rv;
 }
 
@@ -23,19 +25,6 @@ for (var i=0; i<elements.length; i++) {
 
 
     elements[i].title = info(json);
-
-
-
-
-// $.getJSON(json ,function(data) {
-//                                 $.each(data.query.pages, function(x, item)
-//                                     {
-//                                         console.log(item.title);
-//                                     });
-
-
-
-//     });
 
 
 }
