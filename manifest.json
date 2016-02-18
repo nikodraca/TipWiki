@@ -1,13 +1,13 @@
 {
 "manifest_version": 2,
-    "name": "WikiPreview",
+    "name": "TipWiki",
     "description": "Hover over links to get information",
     "version": "1.0",
     "content_scripts": [
         {
             "matches": [
-                "http://*/*",
-                "https://*/*"
+                "http://*.wikipedia.org/*",
+                "https://*.wikipedia.org/*"
             ],
             "js": [
                 "jquery-2.2.0.min.js",
