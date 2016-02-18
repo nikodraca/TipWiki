@@ -3,6 +3,10 @@
     "name": "TipWiki",
     "description": "Hover over Wikipedia links to get information about the subject",
     "version": "0.1",
+        "icons": { 
+            "128":"icon.png" 
+    }, 
+
     "content_scripts": [
         {
             "matches": [
