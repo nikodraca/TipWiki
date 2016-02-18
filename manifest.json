@@ -1,8 +1,8 @@
 {
 "manifest_version": 2,
     "name": "TipWiki",
-    "description": "Hover over links to get information",
-    "version": "1.0",
+    "description": "Hover over Wikipedia links to get information about the subject",
+    "version": "0.1",
     "content_scripts": [
         {
             "matches": [
