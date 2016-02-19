@@ -2,7 +2,7 @@
 "manifest_version": 2,
     "name": "TipWiki",
     "description": "Hover over Wikipedia links to get information about the subject",
-    "version": "0.3",
+    "version": "0.4",
     "icons": { 
             "128":"icon.png" 
     }, 
